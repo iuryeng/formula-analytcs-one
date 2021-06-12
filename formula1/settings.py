@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'formula1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'bd_f1',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'root',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'PASSWORD': '',
     }
 }
 
