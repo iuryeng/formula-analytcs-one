@@ -20,4 +20,9 @@ from dashboard import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', views.index),
+    path('detalhe-pilotos/<int:pk>', views.detalhe_pilotos),
+    path('detalhe-pilotos/<str:nome>', views.detalhe_piloto_por_nome),
+    path('pilotos/', views.pilotos),
+    path('detalhe-corridas/<int:pk>', views.detalhe_corridas),
+
 ]

@@ -20,3 +20,5 @@ B. Configurações no Django Project
 }
 
 C. Construa o banco de dados inicial do django executando as  migrates com: `python manage.py migrate`
+
+D. Gere models com base nos modelos existentes no banco de dados com `python manage.py inspectdb > models.py`
